@@ -1,0 +1,385 @@
+
+.title-border {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.title-border:before,
+.title-border:after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	background-color: #231f20;
+	width: 65%;
+}
+
+.title-border:before {
+	top: -8px;
+	left: -15%;
+}
+
+.title-border:after {
+	right: -15%;
+	bottom: -8px;
+}
+
+.gray-border {
+	border: 1px solid #e5e5e5;
+}
+
+.icofont {
+	color: #231f20;
+}
+
+.icofont:hover {
+	opacity: .95;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+}
+
+.btn-set a {
+	max-width: 45%;
+}
+
+.btn-set a:first-child {
+	margin-right: 25px;
+}
+
+
+/*
+|----------------------------------------------------------------------------
+		1. HEADER
+|----------------------------------------------------------------------------
+*/
+
+.main-header nav {
+	border: none;
+}
+
+.logo {
+	padding-top: 29px;
+}
+
+.affix .logo {
+	padding-top: 10px;
+}
+
+.affix {
+	background: -webkit-linear-gradient(left, #231f20 30%, #1b75bb 90%);
+	background: linear-gradient(to right, #231f20 30%, #1b75bb 90%);
+}
+
+
+/*
+|----------------------------------------------------------------------------
+		2. MENU
+|----------------------------------------------------------------------------
+*/
+
+.nav li a {
+	color: #fff;
+	padding: 45px 15px;
+	position: relative;
+}
+
+.menu-border li a:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border-right: 1px solid #231f20;
+	border-left: 1px solid #231f20;
+	height: 15px;
+}
+
+.menu-border li:last-child a:after,
+.affix .menu-border li a:after {
+	content: none;
+}
+
+.affix .nav li a {
+	padding: 25px 15px;
+}
+
+.nav li a:hover,
+.page-blog .affix .nav li.active a,
+.nav li a:focus {
+	background-color: transparent;
+}
+
+.affix .nav li.active a,
+.affix .nav li a:hover,
+.page-blog .affix .nav li a:hover {
+	background-color: #303030;
+}
+
+
+/* SUB MENU */
+.nav li {
+	position: relative;
+}
+.nav li ul {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	border-radius: 0 0 4px 4px;
+	display: none;
+}
+
+.nav li ul ul {
+	top: 0;
+	left: 100%;
+}
+
+.nav li ul li {
+	float: none;
+	border-top: 1px solid rgba(146, 132, 132, 0.52);
+}
+
+.nav ul li a,
+.affix .nav ul li a {
+	display: block;
+	padding: 10px 22px;
+	background-color: rgb(156, 9, 29);
+	white-space: nowrap;
+}
+
+.nav ul li a:hover,
+.affix .nav ul li a:hover {
+	background-color: #231f20;
+}
+
+li.has-sub-menu:hover > a {
+	background-color: #303030;
+}
+
+li.has-sub-menu > a:after {
+	content: '\eb73';
+	font-family: 'icofont';
+	position: relative;
+	top: 2px;
+	left: 2px;
+	color: #eee;
+}
+
+li.has-sub-menu a + i {
+	display: none;
+	cursor: pointer;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+/*
+|----------------------------------------------------------------------------
+		3. SLIDER
+|----------------------------------------------------------------------------
+*/
+
+/*fix click for particles js*/
+.home-slider.owl-carousel, 
+.home-slider.owl-carousel * {
+	z-index: 10;
+}
+
+.slider-item {
+	background-color: #231f20;
+	height: 700px;
+	padding-top: 180px;
+}
+
+.slide-bg-1,
+.slide-bg-2,
+.slide-bg-3 {
+	background-image: url('../img/Gryphon_Tower.png');
+}
+
+.banner-image {
+	width: 125%;
+}
+
+.banner-text * {
+	color: #fff;
+}
+
+.banner-text h1 {
+	margin-bottom: 45px;
+	line-height: 1.2;
+}
+
+.banner-text p {
+	margin-bottom: 65px;
+}
+
+.banner-text .btn {
+	position: relative;
+	padding-left: 40px;
+	font-size: 22px;
+}
+
+.banner-text .btn i {
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 32px;
+	color: #fff;
+	border: none;
+	padding: 0;
+}
+
+.banner-text .btn:hover,
+.banner-text .btn:hover i {
+	background-color: #f6f6f6;
+	color: #231f20;
+}
+
+.home-slider .owl-dots {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	position: absolute;
+	right: 40px;
+	z-index: 9999;
+}
+
+.home-slider .owl-dots .owl-dot {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.home-slider .owl-dots .owl-dot:last-child {
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+.home-slider .owl-dots .owl-dot span {
+	background-color: #231f20	;
+}
+
+.home-slider .owl-dots .owl-dot.active span {
+	background-color: #fff;
+}
+
+
+
+/*
+|----------------------------------------------------------------------------
+		4. APP OVERVIEW
+|----------------------------------------------------------------------------
+*/
+
+.app-overview-icon {
+	width: 25%;
+}
+
+.app-overview-content {
+	width: 75%;
+	padding-top: 17px;
+	padding-bottom: 50px;
+}
+
+.app-overview-lists li:last-child .app-overview-content {
+	padding-bottom: 0;
+}
+
+.app-overview-lists i {
+	border: 1px solid #231f20;
+}
+
+.app-overview-content h3 {
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.app-overview-content p {
+	color: rgba(0, 0, 0, 0.502);
+	line-height: 1.5;
+}
+
+.vide-over-view {
+	background-image: url('../img/demo-5/vide-overview-bg.jpg');
+	background-attachment: fixed;
+	position: relative;
+	padding: 135px 0;
+	background-size: contain 50%
+}
+
+/*fix click for particles js*/
+.video-area * {
+	z-index: 10;
+}
+
+.video-play-icon i {
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	padding: 0 0 0 6px;
+	font-size: 25px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.video-play-icon i:hover {
+	background-color: #231f20;
+	border: 2px solid #231f20;
+	border: 2px solid #231f20;
+}
+
+.video-link {
+	display: block;
+	margin-top: 40px;
+}
+
+.video-link i {
+	border: none;
+	padding: 0;
+	font-size: 16px;
+}
+
+
+/*
+|----------------------------------------------------------------------------
+		5. FEATURED
+|----------------------------------------------------------------------------
+*/
+
+.featured-item {
+	padding: 45px 25px;
+}
+
+.featured-item h3 {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+
+.featured-item i {
+	border-color: #231f20;
+	color: #231f20;
+}
+
+/*
+|----------------------------------------------------------------------------
+		10. FOOTER
+|----------------------------------------------------------------------------
+*/
+
+.footer-bottom {
+	padding-top: 27px;
+	padding-bottom: 24px;
+	border-bottom: 2px solid #ed3851;
+}
+
+.copyright-text,
+.footer-menu li a {
+}
+
+.footer-menu li a {
+	padding: 0px 6px;
+}
