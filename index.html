@@ -88,9 +88,12 @@
 										</h1>
 										<br>
 										<div class="btn-set">
-											<a href="#overview" class="btn btn-round btn-red">
-												<i class="icofont icofont-brand-linux"></i>Linux</a>
-											<a href="#overview" class="btn btn-round btn-red"><i class="icofont icofont-brand-windows"></i>Windows</a>
+											<a href="#overview" class="btn btn-round btn-red" onclick="promptForOrderId()">
+												<i class="icofont icofont-brand-linux"></i>Linux
+											</a>
+											<a href="#overview" class="btn btn-round btn-red" onclick="promptForOrderId()">
+												<i class="icofont icofont-brand-windows"></i>Windows
+											</a>
 										</div>
 									</div>
 								</div>
@@ -327,5 +330,9 @@
 				"email": email
 			}))
 		}
+	}
+
+	function promptForOrderId() {
+		prompt("Please enter your order id");
 	}
 </script>
